@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import ThemeToggler from './Components/ThemeToggler';
+import themeContext from './Utils/ThemeContext';
+import Counter from './Components/Counter';
+import Calculator from './Components/Calculator';
+import TicTacToe from './Components/TicTacToe';
+import TaskManager from './Components/TaskManager';
 
 function App() {
+
+  const themeHook = useState("dark")
   return (
+    <themeContext.Provider value={themeHook}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     {/* ThemeToggler
+     <ThemeToggler/>
+    <Counter/>
+    <Calculator/>
+    <TicTacToe/> */}
+    <TaskManager/>
+        </div>
+    </themeContext.Provider>   
   );
 }
 
