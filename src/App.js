@@ -14,12 +14,11 @@ function App() {
   return (
     <themeContext.Provider value={themeHook}>
     <div className="App">
-     {/* ThemeToggler
      <ThemeToggler/>
     <Counter/>
     <Calculator/>
-    <TicTacToe/> */}
-    <TaskManager/>
+    <TicTacToe/>
+    
         </div>
     </themeContext.Provider>   
   );

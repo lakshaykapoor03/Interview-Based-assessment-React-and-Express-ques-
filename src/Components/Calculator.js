@@ -26,48 +26,45 @@ const Calculator = () => {
   };
   return (
     <div>
-      <h1>Calculator</h1>
-      <div>
-        <div>
-          <div
-            style={{
-              backgroundColor: "aqua",
-              padding: "4px",
-              width: "300px",
-              margin: "auto",
-              height: "20px",
-            }}
-          >
+      <h1>Question 13 - Calculator Using React Only</h1>
+      <div className="calcultor-container">
+    
+        <div className="calculator-input">
             {value}
           </div>
-        </div>
-        <div>
-          <div>
-            <button onClick={() => calculatorInput("7")}>7</button>
-            <button onClick={() => calculatorInput("8")}>8</button>
-            <button onClick={() => calculatorInput("9")}>9</button>
-            <button onClick={() => clearFunction()}>AC</button>
-            <button onClick={() => removeLastValue()}>C</button>
+          <div className="calculator-row">
+            <button className="calculator-btn" onClick={() => calculatorInput("7")}>7</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("8")}>8</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("9")}>9</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("/")}>/</button>
           </div>
-          <div>
-            <button onClick={() => calculatorInput("4")}>4</button>
-            <button onClick={() => calculatorInput("5")}>5</button>
-            <button onClick={() => calculatorInput("6")}>6</button>
-            <button onClick={() => calculatorInput("*")}>X</button>
+          <div className="calculator-row">
+            <button className="calculator-btn"  onClick={() => calculatorInput("4")}>4</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("5")}>5</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("6")}>6</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("*")}>X</button>
           </div>
-          <div>
-            <button onClick={() => calculatorInput("1")}>1</button>
-            <button onClick={() => calculatorInput("2")}>2</button>
-            <button onClick={() => calculatorInput("3")}>3</button>
-            <button onClick={() => calculatorInput("-")}>-</button>
+          <div className="calculator-row">
+            <button className="calculator-btn" onClick={() => calculatorInput("1")}>1</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("2")}>2</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("3")}>3</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("-")}>-</button>
           </div>
-          <div>
-            <button onClick={() => calculatorInput("0")}>0</button>
-            <button onClick={() => calculatorInput(".")}>.</button>
-            <button onClick={() => onCalculate()}>=</button>
-            <button onClick={() => calculatorInput("+")}>+</button>
+          <div className="calculator-row">
+            <button className="calculator-btn" onClick={() => calculatorInput("0")}>0</button>
+            <button className="calculator-btn" onClick={() => calculatorInput(".")}>.</button>
+            <button className="calculator-btn" onClick={() => calculatorInput("+")}>+</button>
+            <button className="calculator-btn" onClick={() => removeLastValue()}>C</button>
+
           </div>
-        </div>
+          <div className="calculator-row">
+            <button className="calculator-btn2" onClick={() => onCalculate()}>=</button>
+            <button className="calculator-btn2" onClick={() => clearFunction()}>AC</button>
+
+          
+
+          </div>
+       
       </div>
     </div>
   );

@@ -70,6 +70,9 @@ class TicTacToe extends React.Component {
     }
 
     return (
+      <>
+      <h1> Question 14 - Tic Tac Toe Game using Class Component of React </h1>
+      <div className="game-container">
       <div className="game">
         <div className="board">{cells}</div>
         <div className="status">{status}</div>
@@ -77,6 +80,9 @@ class TicTacToe extends React.Component {
           Reset
         </button>
       </div>
+      </div>
+      </>
+     
     );
   }
 }
