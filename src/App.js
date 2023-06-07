@@ -6,7 +6,6 @@ import themeContext from './Utils/ThemeContext';
 import Counter from './Components/Counter';
 import Calculator from './Components/Calculator';
 import TicTacToe from './Components/TicTacToe';
-import TaskManager from './Components/TaskManager';
 
 function App() {
 
